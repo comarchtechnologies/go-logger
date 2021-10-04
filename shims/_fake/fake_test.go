@@ -1,7 +1,7 @@
 package fake
 
 import (
-	"github.com/InVisionApp/go-logger"
+	"github.com/comarchtechnologies/go-logger"
 	. "github.com/onsi/ginkgo"
 )
 

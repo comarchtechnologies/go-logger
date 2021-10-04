@@ -1,7 +1,7 @@
 package logrus
 
 import (
-	"github.com/InVisionApp/go-logger"
+	"github.com/comarchtechnologies/go-logger"
 	"github.com/sirupsen/logrus"
 )
 

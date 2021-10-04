@@ -4,15 +4,15 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"io"
 	"math/rand"
+	"os"
 
-	"github.com/InVisionApp/go-logger"
+	"github.com/comarchtechnologies/go-logger"
 	"github.com/rs/zerolog"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"io"
-	"os"
 )
 
 var _ = Describe("satisfies interface", func() {
