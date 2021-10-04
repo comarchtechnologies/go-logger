@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/InVisionApp/go-logger"
+	"github.com/comarchtechnologies/go-logger"
 	"github.com/rs/zerolog"
 )
 
@@ -115,8 +115,6 @@ func (s *shim) Errorf(format string, args ...interface{}) {
 // zerolog logger, with the provided fields added to the log string,
 // as a key-value pair
 func (s *shim) WithFields(fields log.Fields) log.Logger {
-	lg := s.logger.With().Fields(fields).Logger()
-	s.logger = &lg
-
-	return s
+	l := s.logger.With().Fields(fields).Logger()
+	return &shim{logger: &l}
 }
